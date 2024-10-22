@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+</head>
+<body>
+    <h1>My Contacts</h1>
+    <a href="/new">Add a New Contact</a>
+    <h2>Contact List</h2>
+    {% if contacts %}
+        <ul>
+            {% for contact in contacts %}
+                <li>
+                    <strong>{{ contact.name }}</strong>: {{ contact.phone }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No contacts yet!</p>
+    {% endif %}
+</body>
+</html>
