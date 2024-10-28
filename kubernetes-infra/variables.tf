@@ -5,10 +5,10 @@ variable "project_id" {
 
 variable "region" {
   description = "The region to deploy to"
-  default     = "us-central1-c"
+  default     = "us-east1-b"
 }
 
 variable "cluster_name" {
   description = "The name of the GKE cluster"
-  default     = "gke-cluster-test"
+  default     = "gke-test-cluster"
 }

@@ -1,6 +1,6 @@
 resource "kubernetes_service" "my_app_service" {
   metadata {
-    name = "try-deploy-service"
+    name = "terraform-deploy-service"
   }
 
   spec {
